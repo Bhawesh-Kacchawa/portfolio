@@ -1,9 +1,13 @@
 import LandingGate from "../components/LandingGate";
+import PlexusEngine from "../components/PlexusEngine";
 
 export default function Home() {
   return (
-    <div className=" max-w-3xl m-auto dark:bg-black">
-      <LandingGate />
-    </div>
+    <main className="relative isolate min-h-screen bg-[#0a0a0a]">
+      <PlexusEngine />
+      <div className="relative z-10">
+        <LandingGate />
+      </div>
+    </main>
   );
 }

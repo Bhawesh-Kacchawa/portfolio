@@ -10,16 +10,16 @@ const linkedinIcon = {
 };
 
 const contactLinks = [
-  { label: "GitHub", href: "https://github.com/your-username", icon: siGithub },
+  { label: "GitHub", href: "https://github.com/Bhawesh-Kacchawa", icon: siGithub },
   {
     label: "LinkedIn",
-    href: "https://linkedin.com/in/your-username",
+    href: "https://www.linkedin.com/in/bhawesh-kacchawa",
     icon: linkedinIcon,
   },
   { label: "Mail", href: "mailto:bhaweshkacchawa@.com", icon: siGmail },
   {
     label: "X",
-    href: "https://twitter.com/your-username",
+    href: "https://x.com/BhaweshKacchawa",
     icon: { ...siX, hex: "FFFFFF" },
   },
   {
@@ -58,14 +58,8 @@ const AboutMe = () => {
               <a
                 key={label}
                 href={href}
-                target={
-                  label === "Email" || label === "Resume" ? undefined : "_blank"
-                }
-                rel={
-                  label === "Email" || label === "Resume"
-                    ? undefined
-                    : "noreferrer"
-                }
+                target={label === "Mail" ? undefined : "_blank"}
+                rel={label === "Mail" ? undefined : "noreferrer"}
                 className="inline-flex items-center gap-1.5 text-xs text-gray-300 transition-colors hover:text-white"
               >
                 <svg
@@ -84,7 +78,6 @@ const AboutMe = () => {
       </section>
 
       <div className="mt-4 border border-dashed border-gray-100/10 " />
-      {/* yaha oe manu arora ka cool effect add kerna hai */}
 
       <p className=" mt-4 text-sm w-full tracking-tight flex flex-col justify-start">
         <span className="font-semibold">Frontend Developer passionate about building interactive and

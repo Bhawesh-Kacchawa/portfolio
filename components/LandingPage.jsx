@@ -4,7 +4,7 @@ import Freelancing from "./Freelancing";
 
 const LandingPage = () => {
   return (
-    <div className="pt-10 px-4 dark:bg-black">
+    <div className="mx-auto w-full max-w-2xl border-dashed border-x border-white/20 bg-black/10 px-4 pt-10 backdrop-blur-sm">
       <AboutMe />
       <div className="mt-4 border border-dashed border-gray-100/10 " />
       <MySkills />
