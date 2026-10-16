@@ -14,7 +14,7 @@ const contactLinks = [
   {
     label: "GitHub",
     href: "https://github.com/Bhawesh-Kacchawa",
-    icon: siGithub,
+    icon:{ ...siGithub , hex: "FFFFFF"}
   },
   {
     label: "LinkedIn",
@@ -38,7 +38,7 @@ const AboutMe = () => {
   return (
     <div className="font-thin">
       <section className="mt-4 my-auto flex flex-col space-between md:flex-row md:items-center ">
-        <div className="size-[130px] mt-4 md:mt-0 md:ml-4 flex justify-center items-center border border-gray-300/10 rounded-lg p-2">
+        <div className="size-[100px] mt-4 md:mt-0 md:ml-4 flex justify-center items-center border border-dashed border-white/30 rounded-xl p-1">
           <Image
             src={profilePic}
             alt="Bhawesh Kacchawa"
@@ -61,7 +61,7 @@ const AboutMe = () => {
               borderColor="#f7f7f7"
               cornerSize={5}
               borderWidth={2}
-              animationDuration={0.8}
+              animationDuration={1.5}
               pauseBetweenAnimations={1.3}
             />
           </h2>
@@ -71,7 +71,7 @@ const AboutMe = () => {
           </p> */}
           <nav
             aria-label="Contact and social links"
-            className="mt-4 flex flex-wrap gap-x-4 gap-y-2"
+            className="mt-6 flex flex-wrap gap-x-6 gap-y-2"
           >
             {contactLinks.map(({ label, href, icon }) => (
               <a
@@ -89,7 +89,9 @@ const AboutMe = () => {
                 >
                   <path d={icon.path} />
                 </svg>
-                <span>{label}</span>
+                <span
+                className="tracking-tight font-semibold"
+                >{label}</span>
               </a>
             ))}
           </nav>
@@ -99,11 +101,11 @@ const AboutMe = () => {
       <div className="mt-4 border border-dashed border-gray-100/10 " />
 
       <p className=" mt-4 text-sm w-full font-[100px] flex flex-col justify-start">
-        <span className="font-semibold">
+        <span className="font-semibold text-sm">
           Frontend Developer passionate about building interactive and
-          user-friendly web applications,
+          user-friendly web applications.
         </span>{" "}
-        <span>
+        <span className="tracking-tight text-xs text-gray-400" >
           Builds fast, polished web apps with React, Next.js, and TypeScript. I
           enjoy solving real problems with clean code and good design, and I’m
           always learning something new.

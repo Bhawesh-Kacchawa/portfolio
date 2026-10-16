@@ -175,7 +175,7 @@ export function HoverLinkCard(props: HoverLinkCardProps) {
                       : { opacity: 0, y: 12, scale: 0.94 }
                   }
                   transition={{ type: "spring", stiffness: 260, damping: 22 }}
-                  className="overflow-hidden rounded-2xl border border-neutral-200 bg-white p-[5px] shadow-xl shadow-black/10 dark:border-neutral-700 dark:bg-neutral-900 dark:shadow-black/40"
+                  className="overflow-hidden rounded-2xl border border-neutral-200 bg-white p-[5px] shadow-xl shadow-black/10 dark:border-neutral-700 dark:bg-neutral-900/60 dark:shadow-black/40"
                   style={{
                     width: width + 16,
                     maxWidth: "calc(100vw - 24px)",

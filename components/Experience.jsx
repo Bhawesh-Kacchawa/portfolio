@@ -3,14 +3,14 @@
 import { motion, useReducedMotion } from "framer-motion";
 import { HoverLinkCard } from "./ui/hover-link-card";
 
-const Projects = () => {
+const Experience = () => {
   const shouldReduceMotion = useReducedMotion();
 
   return (
     <section aria-labelledby="projects-heading" className="mt-4 pb-10">
       <div className="mb-3 flex items-end justify-between">
         <h3 id="projects-heading" className="text-lg font-semibold">
-          Projects
+          Experience
         </h3>
         {/* <span className="text-xs text-gray-400">Selected work</span> */}
       </div>
@@ -33,8 +33,8 @@ const Projects = () => {
                 <h4 className="mt-1 text-base font-semibold text-white">
                   HiMumma
                 </h4>
-                <span className="flex items-center gap-2 rounded-full border border-emerald-400/20 px-2 py-1 text-xs text-emerald-200">
-                  <span aria-hidden="true" className="relative size-2 shrink-0">
+                <span className="flex items-center relative gap-2 rounded-full border border-emerald-400/20 px-2 py-1 text-xs text-emerald-200">
+                  <span aria-hidden="true" className="relative grid size-2 shrink-0 place-items-center">
                     {!shouldReduceMotion && (
                       <>
                         <motion.span
@@ -49,7 +49,7 @@ const Projects = () => {
                         />
                       </>
                     )}
-                    <span className="absolute inset-0 rounded-full bg-emerald-400" />
+                    <span className="size-2 absolute ] rounded-full bg-emerald-400" />
                   </span>
                   <span className="text-[10px] font-semibold">
                     Currently working with them
@@ -62,7 +62,7 @@ const Projects = () => {
                 pregnancy e-commerce platform.
               </p>
               <p className="mt-2 text-xs leading-relaxed text-gray-300">
-                <span className="font-semibold">
+                <span className="font-semibold underline">
                   Freelance frontend developer at Himumma since October 2025
                 </span>
                 , building responsive, user-focused interfaces for a
@@ -96,4 +96,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Experience;
