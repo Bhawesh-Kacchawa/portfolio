@@ -1,5 +1,6 @@
 import profilePic from "../public/profile.png";
 import Image from "next/image";
+import TrueFocus from "./ui/TrueFocus";
 import { siGithub, siX, siGmail, siGoogle, siFiles } from "simple-icons";
 
 const resumeIcon = siFiles;
@@ -10,7 +11,11 @@ const linkedinIcon = {
 };
 
 const contactLinks = [
-  { label: "GitHub", href: "https://github.com/Bhawesh-Kacchawa", icon: siGithub },
+  {
+    label: "GitHub",
+    href: "https://github.com/Bhawesh-Kacchawa",
+    icon: siGithub,
+  },
   {
     label: "LinkedIn",
     href: "https://www.linkedin.com/in/bhawesh-kacchawa",
@@ -42,9 +47,23 @@ const AboutMe = () => {
         </div>
 
         <div className="mt-4 md:mt-0 md:ml-4">
-          <h2 className="text-xl">
-            Bhawesh Kacchawa -{" "}
-            <span className="font-semibold">Frontend Developer</span>
+          <h2 aria-label="Bhawesh Kacchawa, Frontend Developer">
+            <TrueFocus
+              sentence="Bhawesh Kacchawa|Frontend Developer"
+              separator="|"
+              className="justify-start gap-2"
+              wordClassName="text-xl font-semibold text-white cursor-default md:text-2xl"
+              manualMode={false}
+              focusStyle="brackets"
+              easing="smooth"
+              blurAmount={4}
+              unfocusedOpacity={0.90}
+              borderColor="#f7f7f7"
+              cornerSize={5}
+              borderWidth={2}
+              animationDuration={0.8}
+              pauseBetweenAnimations={1.3}
+            />
           </h2>
           {/* <p className="mt-1 text-xs text-gray-300 tracking-tight">
             Passionate about building interactive and user-friendly web
@@ -52,7 +71,7 @@ const AboutMe = () => {
           </p> */}
           <nav
             aria-label="Contact and social links"
-            className="mt-2 flex flex-wrap gap-x-4 gap-y-2"
+            className="mt-4 flex flex-wrap gap-x-4 gap-y-2"
           >
             {contactLinks.map(({ label, href, icon }) => (
               <a
@@ -80,10 +99,15 @@ const AboutMe = () => {
       <div className="mt-4 border border-dashed border-gray-100/10 " />
 
       <p className=" mt-4 text-sm w-full font-[100px] flex flex-col justify-start">
-        <span className="font-semibold">Frontend Developer passionate about building interactive and
-        user-friendly web applications,</span> <span>Builds fast, polished web apps with
-        React, Next.js, and TypeScript. I enjoy solving real problems with clean
-        code and good design, and I’m always learning something new.</span>
+        <span className="font-semibold">
+          Frontend Developer passionate about building interactive and
+          user-friendly web applications,
+        </span>{" "}
+        <span>
+          Builds fast, polished web apps with React, Next.js, and TypeScript. I
+          enjoy solving real problems with clean code and good design, and I’m
+          always learning something new.
+        </span>
       </p>
       {/* <div className="size-[180px] mt-4 md:mt-0 md:ml-4 flex justify-center items-center">
         <Image src={profilePic} alt="Bhawesh Kacchawa" className="w-32 h-32 rounded-full" />

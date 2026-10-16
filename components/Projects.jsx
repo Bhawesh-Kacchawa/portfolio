@@ -1,6 +1,7 @@
 "use client";
 
 import { motion, useReducedMotion } from "framer-motion";
+import { HoverLinkCard } from "./ui/hover-link-card";
 
 const Projects = () => {
   const shouldReduceMotion = useReducedMotion();
@@ -15,9 +16,11 @@ const Projects = () => {
       </div>
 
       <div className="space-y-3">
-        
-        <a
-          href="https://himumma.com"
+        <HoverLinkCard
+          mode="dynamic"
+          //   title="Hi Mumma"
+          //   description="Maternity and pregnancy care"
+          url="https://himumma.com"
           target="_blank"
           rel="noreferrer"
           aria-label="Visit the Hi Mumma website"
@@ -48,7 +51,9 @@ const Projects = () => {
                     )}
                     <span className="absolute inset-0 rounded-full bg-emerald-400" />
                   </span>
-                  <span className="text-[10px] font-semibold">Currently working with them</span>
+                  <span className="text-[10px] font-semibold">
+                    Currently working with them
+                  </span>
                 </span>
               </section>
 
@@ -58,15 +63,15 @@ const Projects = () => {
               </p>
               <p className="mt-2 text-xs leading-relaxed text-gray-300">
                 <span className="font-semibold">
-                  I worked primarily as a frontend developer
+                  Freelance frontend developer at Himumma since October 2025
                 </span>
-                , crafting responsive, user-focused interfaces, while also
-                collaborating with the backend team on APIs and integrations to
-                deliver reliable, scalable product features.
+                , building responsive, user-focused interfaces for a
+                maternity-care e-commerce platform and integrating them with
+                backend APIs to ship reliable, scalable features.
               </p>
             </div>
           </article>
-        </a>
+        </HoverLinkCard>
 
         <article className="flex mt-2 min-h-24 items-center justify-between gap-4 border border-dashed border-white/20 px-5 py-4">
           <div>

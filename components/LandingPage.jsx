@@ -13,6 +13,7 @@ const LandingPage = () => {
       <MySkills />
       <div className="mt-4 border border-dashed border-gray-100/10 " />
       <Freelancing />
+      <div className="mt-4 border border-dashed border-gray-100/10 " />
     </div>
   );
 };

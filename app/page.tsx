@@ -1,5 +1,5 @@
 import LandingGate from "../components/LandingGate";
-import PlexusEngine from "../components/PlexusEngine";
+import PlexusEngine from "../components/ui/PlexusEngine";
 
 export default function Home() {
   return (
