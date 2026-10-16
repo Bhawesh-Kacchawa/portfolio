@@ -79,14 +79,11 @@ const AboutMe = () => {
 
       <div className="mt-4 border border-dashed border-gray-100/10 " />
 
-      <p className=" mt-4 text-sm w-full tracking-tight flex flex-col justify-start">
+      <p className=" mt-4 text-sm w-full font-[100px] flex flex-col justify-start">
         <span className="font-semibold">Frontend Developer passionate about building interactive and
         user-friendly web applications,</span> <span>Builds fast, polished web apps with
         React, Next.js, and TypeScript. I enjoy solving real problems with clean
-        code and good design, and I’m always learning something new. I can
-        tailor either one for a specific purpose, such as a resume summary, a
-        LinkedIn headline, or a portfolio hero section, if you tell me where
-        you’ll use it.</span>
+        code and good design, and I’m always learning something new.</span>
       </p>
       {/* <div className="size-[180px] mt-4 md:mt-0 md:ml-4 flex justify-center items-center">
         <Image src={profilePic} alt="Bhawesh Kacchawa" className="w-32 h-32 rounded-full" />

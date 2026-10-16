@@ -96,7 +96,7 @@ const MySkills = () => {
           <section
             key={group.title}
             aria-label={group.title}
-            className={`rounded-smF border border-dashed border-white/50 p-4 ${group.className}`}
+            className={`rounded-smF border border-dashed border-white/20 p-4 ${group.className}`}
           >
             <h4 className="mb-4 text-xs font-bold uppercase tracking-wider text-white">
               {group.title}
